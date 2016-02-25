@@ -699,7 +699,7 @@ function! <SID>DoxygenCommentFunc()
       exec "normal o".s:interCommentTag
       let s:insertEmptyLine = 0
     endif
-    exec "normal o".s:interCommentTag.g:DoxygenToolkit_paramTag_pre.g:DoxygenToolkit_paramTag_post.param
+    exec "normal o".s:interCommentTag.g:DoxygenToolkit_paramTag_pre.param.g:DoxygenToolkit_paramTag_post
   endfor
 
   " Returned value
